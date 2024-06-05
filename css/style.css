@@ -1,0 +1,39 @@
+body {
+    font-family:"PT Sans Caption", sans-serif;
+    background-color: beige;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+    font-family: "Pacifico", cursive;
+    position: relative;
+}
+
+.container h2{
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+/* Styles for validation */
+.is-valid {
+    border-color: #d99c39;
+}
+
+.is-invalid {
+    border: 2px solid red;
+}

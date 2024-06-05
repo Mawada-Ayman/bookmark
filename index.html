@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="shortcut icon" href="image/bookmark.png" type="image/x-icon">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <!-- fonts -->
+    <script src="https://kit.fontawesome.com/8adc8a7dd7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Bookmarker</h1>
+        <h2>
+            <i class="fa-solid fa-bookmark"></i>
+            Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark"></i>
+        </h2>
+        <form id="bookmarkForm" class="mb-3">
+            <div class="form-group mb-3">
+                <label class="text-start mb-1 d-block fw-bold" for="siteName">
+                    <i class="fa-solid fa-book-bookmark pe-2"></i>
+                    Site Name</label>
+                <input type="text" id="siteName" class="form-control" placeholder="Bookmark Name" required>
+            </div>
+            <div class="form-group mb-3">
+                <label class="text-start mb-1 d-block fw-bold" for="siteUrl">
+                    <i class="fa-solid fa-link pe-2"></i>
+                    Site URL</label>
+                <input type="url" id="siteUrl" class="form-control" placeholder="Website URL" required>
+            </div>
+            <button type="submit" class="btn btn-outline-primary px-4">Submit</button>
+        </form>
+        <div id="bookmarksResults">
+            <table class="table mt-4 text-center bg-light">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="bookmarksTable">
+                    <!-- Bookmarks will be added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
